@@ -12,7 +12,7 @@ class Bank():
 		return f'{amount} withdraw successful'
 
 	def __str__(self):
-		print(f'Name : {name}\nBalance: {balance}')
+		return f'Name : {self.name}\nBalance: {self.balance}'
 
 account = Bank('Rezoan', 5000)
 print(account.withdraw(1000))
