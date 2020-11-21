@@ -12,7 +12,7 @@ class Bank():
 			self.balance = self.balance - amount
 			return f'{amount} withdraw successful'
 		else:
-			return 'You do not have enough balance'
+			 print('You do not have enough balance')
 
 	def __str__(self):
 		return f'Name : {self.name}\nBalance: {self.balance}'
@@ -25,3 +25,4 @@ print(account.transaction(10000))
 print(account)
 print(account.withdraw(1000))
 print(account)
+account.withdraw(20000)
